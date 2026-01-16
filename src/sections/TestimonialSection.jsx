@@ -1,6 +1,26 @@
+import { useRef } from "react"
 import { testimonials } from "../assets/data"
 
 const TestimonialSection = () => {
+
+    const marqueeRef = useRef(null)
+
+    // Pause marquee on hover
+    const handleMouseEnter = () => {
+        if (marqueeRef.current) {
+
+                marqueeRef.current.style.setProperty("--marquee-play-state", "paused")
+        }
+    }
+
+    // Resume marquee on leave
+    const handleMouseLeave = () => {
+        if (marqueeRef.current) {
+
+                marqueeRef.current.style.setProperty("--marquee-play-state", "running")
+        }
+    }
+
   return (
     <section className="py-20 overflow-hidden">
         <div className="container mx-auto px-4">
@@ -19,40 +39,46 @@ const TestimonialSection = () => {
         {/* MARQUEE */}
         <div className="relative flex flex-col antialiased">
             {/* Container */}
-            <div className="relative flex overflow-hidden py-4">
+            <div ref={marqueeRef} className="relative flex overflow-hidden py-4">
                 {/* Moving Part */}
-                <div className="animate-marquee min-w-full flex shrink-0 items-stretch gap-8">
+                <div className="animate-marquee min-w-full 
+                flex shrink-0 items-stretch gap-8" style={{
+                    animationPlayState: "var(--marque-play-State)"
+                }}>
                     {
-                            testimonials.map((testimonial, index)=>(
-
-                                <div key={index} className="w-[400px] cursor-pointer shrink-0 bg-black/40 backdrop-blur-xl border-white/5
-                                hover:border-white/10 transition-all duration-300 p-8 border-2 rounded-xl">
-                                    {/* Image & Name */}
-                                    <div className="centered-row gap-4 mb-6">
-                                        {/* img */}
-                                        <div className="h-12 w-12 overflow-clip rounded-full text-xl center-item text-center
-                                        bg-pink-500">
-                                            {!testimonial.image ? testimonial.name[0] : <img src={testimonial.image} alt="image" />}
-                                        </div>
-                                    </ div>
-
-                                    {/* name & role */}
-                                    <div>
-                                        <h4 className="font-medium text-lg clash-display text-white/90">
-                                            {testimonial.name}
-                                        </h4>
-                                        <p className="text-sm text-white/60">
-                                            {testimonial.role}
-                                        </p>
-
+                        testimonials.map((testimonial, index)=>(
+                            <div 
+                                key={index}
+                                onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave} 
+                                className="w-[400px] cursor-pointer shrink-0 bg-black/40 backdrop-blur-xl border-white/5
+                            hover:border-white/10 transition-all duration-300 p-8 border-2 rounded-xl">
+                                {/* Image & Name */}
+                                <div className="centered-row gap-4 mb-6">
+                                    {/* img */}
+                                    <div className="h-12 w-12 overflow-clip rounded-full text-xl center-item text-center
+                                    bg-pink-500">
+                                        {!testimonial.image ? testimonial.name[0] : <img src={testimonial.image} alt="image" />}
                                     </div>
+                                </ div>
 
-                                    {/* Content */}
-                                    <p className="text-white/70 text-sm leading-relaxed">
-                                        {testimonial.content}
+                                {/* name & role */}
+                                <div>
+                                    <h4 className="font-medium text-lg clash-display text-white/90">
+                                        {testimonial.name}
+                                    </h4>
+                                    <p className="text-sm text-white/60">
+                                        {testimonial.role}
                                     </p>
+
                                 </div>
-                            ))
+
+                                {/* Content */}
+                                <p className="text-white/70 text-sm leading-relaxed">
+                                    {testimonial.content}
+                                </p>
+                            </div>
+                        ))
                     }
                 </div>
 

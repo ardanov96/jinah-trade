@@ -4,6 +4,8 @@ import HeroSection from "../sections/HeroSection"
 import LogoCarousel from "../sections/LogoCarousel"
 import PricingSection from "../sections/PricingSection"
 import TestimonialSection from "../sections/TestimonialSection"
+import CtaSection from "../sections/ctasection"
+import Footer from "../components/Footer"
 
 const HomePage = () => {
   return (
@@ -23,6 +25,10 @@ const HomePage = () => {
         {/* Testimonial Section */}
         <TestimonialSection />
 
+        {/* CTA Section */}
+        <CtaSection />
+        
+        <Footer />
     </div>
   )
 }

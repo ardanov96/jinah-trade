@@ -1,6 +1,8 @@
-import { Command, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Command } from "lucide-react";
 
 import { footerLinks } from "../assets/data.jsx";
+import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,8 +13,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="centered-row gap-2 cursor-pointer hover:-translate-y-1 transition2">
                 <Command className="w-6 h-6 text-indigo-400" />
-
-                <h3 className="clash-display text-lg text-zinc-100">
+                <h3 className="clash-display text-lg text-zinc-100 hover:text-indigo-300">
                   ForexTrade
                 </h3>
               </div>
@@ -21,13 +22,13 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4">
                 <button variant="ghost" size="icon">
-                  <Instagram className="w-6 h-6" />
+                  <BsInstagram className="w-6 h-6 hover:text-indigo-300 hover:-translate-y-1 transition2" />
                 </button>
                 <button variant="ghost" size="icon">
-                  <Facebook className="w-6 h-6" />
+                  <FaFacebook className="w-6 h-6  hover:text-indigo-300 hover:-translate-y-1 transition2" />
                 </button>
                 <button variant="ghost" size="icon">
-                  <Linkedin className="w-6 h-6" />
+                  <BsLinkedin className="w-6 h-6  hover:text-indigo-300 hover:-translate-y-1 transition2" /> 
                 </button>
               </div>
             </div>
