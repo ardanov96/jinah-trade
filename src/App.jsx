@@ -1,7 +1,16 @@
-import React from "react";
+// Page Imports
+import NavBar from "./components/NavBar";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
-  return <div className="text-white bg-blue-500 text-3xl p-4">App</div>;
+  return (
+    <div className="text-zinc-100 bg-black p-4">
+        <NavBar/> 
+        <div className="">
+            <HomePage/>
+        </div>
+    </div>
+  );
 };
 
 export default App;
