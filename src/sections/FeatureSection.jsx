@@ -59,9 +59,9 @@ const FeatureSection = () => {
                                 onMouseLeave={handleLeave}
                                 onClick={() => setActiveIndex(index) }
                                 className={`centered-row cursor-pointer gap-4 
-                                hover:bg-indigo-500/10 p-2 transition-all duration-300 
+                                hover:bg-green-500/10 p-2 transition-all duration-300 
                                 ease-out border rounded-xl ${
-                                    activeIndex === index ? "border-indigo-400/40 bg-indigo-500/10" 
+                                    activeIndex === index ? "border-green-400/40 bg-green-500/10" 
                                     : "border-transparent"
                                 }`}>
                                 {/* Icon */}
@@ -71,7 +71,7 @@ const FeatureSection = () => {
 
                                 {/* Content */}
                                 <div className="col gap-1">
-                                    <h3 className="text-base clash-display text-indigo-300">
+                                    <h3 className="text-base clash-display text-green-300">
                                         {feature.title}
                                     </h3>
                                     <p className="text-sm text-zinc-300/80">
@@ -104,7 +104,7 @@ const FeatureSection = () => {
                                 transition={{duration: 0.5, ease: "easeOut"}} 
                                 className="glass rounded-xl overflow-hidden w-full relative"
                             >
-                                <div className="inset-0 bg-gradient-to-br from-indigo-500 to-transparent">
+                                <div className="inset-0 bg-gradient-to-br from-green-500 to-transparent">
                                     <img 
                                         src={features[activeIndex].image} 
                                         alt="feature_image"

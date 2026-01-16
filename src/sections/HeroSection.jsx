@@ -35,12 +35,12 @@ const HeroSection = () => {
 
             {/* Buttons */}
             <div className="col sm:flex-row  gap-4 items-start">
-                <button className="bg-indigo-500 text-base clash-display px-4 py-3 rounded-full
-                cursor-pointer hover:-translate-y-1 transition2 hover:bg-indigo-500/20">
+                <button className="bg-green-500 text-base clash-display px-4 py-3 rounded-full
+                cursor-pointer hover:-translate-y-1 transition2 hover:bg-green-500/20">
                     Start Trading Now
                 </button>
                 <button className="text-zinc-50 text-base clash-display glass px-4 centered-row gap-2
-                py-3 rounded-full cursor-pointer hover:-translate-y-1 transition2 hover:bg-indigo-500/20">
+                py-3 rounded-full cursor-pointer hover:-translate-y-1 transition2 hover:bg-green-500/20">
                     View Markets <ArrowRight className=""/>
                 </button>
             </div>

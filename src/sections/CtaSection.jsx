@@ -22,8 +22,8 @@ const ctasection = () => {
                     Join our platform and experience a seamless way to trade."
                 </p>
 
-                <button className="centered-row mx-auto text-lg bg-gradient-to-r from-indigo-400
-                    to-indigo-600 clash-display hover:-translate-y-1 transition2 text-zinc-50 py-3
+                <button className="centered-row mx-auto text-lg bg-gradient-to-r from-green-400
+                    to-green-600 clash-display hover:-translate-y-1 transition2 text-zinc-50 py-3
                     rounded-full px-3 cursor-pointer">
                     Create Account <ArrowRight className="ml-2 w-4 h-4"/> {" "}
                 </button>

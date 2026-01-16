@@ -12,8 +12,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="centered-row gap-2 cursor-pointer hover:-translate-y-1 transition2">
-                <Command className="w-6 h-6 text-indigo-400" />
-                <h3 className="clash-display text-lg text-zinc-100 hover:text-indigo-300">
+                <Command className="w-6 h-6 text-green-400" />
+                <h3 className="clash-display text-lg text-zinc-100 hover:text-green-300">
                   ForexTrade
                 </h3>
               </div>
@@ -22,13 +22,13 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4">
                 <button variant="ghost" size="icon">
-                  <BsInstagram className="w-6 h-6 hover:text-indigo-300 hover:-translate-y-1 transition2" />
+                  <BsInstagram className="w-6 h-6 hover:text-green-300 hover:-translate-y-1 transition2" />
                 </button>
                 <button variant="ghost" size="icon">
-                  <FaFacebook className="w-6 h-6  hover:text-indigo-300 hover:-translate-y-1 transition2" />
+                  <FaFacebook className="w-6 h-6  hover:text-green-300 hover:-translate-y-1 transition2" />
                 </button>
                 <button variant="ghost" size="icon">
-                  <BsLinkedin className="w-6 h-6  hover:text-indigo-300 hover:-translate-y-1 transition2" /> 
+                  <BsLinkedin className="w-6 h-6  hover:text-green-300 hover:-translate-y-1 transition2" /> 
                 </button>
               </div>
             </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                     <li key={index}>
                       <a
                         href="#features"
-                        className="text-sm text-zinc-400 hover:text-indigo-300  hover:ml-3 transition2"
+                        className="text-sm text-zinc-400 hover:text-green-300  hover:ml-3 transition2"
                       >
                         {item}
                       </a>

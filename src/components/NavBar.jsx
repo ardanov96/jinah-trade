@@ -26,7 +26,7 @@ const NavBar = () => {
             <nav className="centered-row justify-between h-full">
                 {/* Logo */}
                 <div className="centered-row gap-2 hover:-translate-y-1 duration-200 transition-all ease-out">
-                    <Command className="w-5 h-5 text-indigo-400"/>
+                    <Command className="w-5 h-5 text-green-400"/>
 
                     <span className="font-bold text-base clash-display"> 
                         JinahTrade
@@ -40,7 +40,7 @@ const NavBar = () => {
                         <a 
                             key={index} 
                             href="nav_link"     
-                            className="text-sm text-zinc-300/90 hover:text-indigo-300 
+                            className="text-sm text-zinc-300/90 hover:text-green-300 
                             hover:-translate-y-1 ease-out transition-all duration-300"
                         >
                             {item}              
@@ -48,9 +48,9 @@ const NavBar = () => {
                     ))}
 
                     {/* Button */}
-                    <button className="clash-display text-base bg-gradient-to-r from-indigo-400 to-indigo-600
+                    <button className="clash-display text-base bg-gradient-to-r from-green-400 to-green-600
                     px-4 py-2 rounded-full cursor-pointer hover:-translate-y-0.5 duration-200 transition-all ease-out       
-                    hover:shadow-xl hover:shadow-indigo-900">
+                    hover:shadow-xl hover:shadow-green-900">
                         Start Trading
                     </button>   
                 
