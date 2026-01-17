@@ -1,4 +1,4 @@
-import { Command } from "lucide-react";
+import { LineChart } from "lucide-react";
 
 import { footerLinks } from "../assets/data.jsx";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
@@ -12,9 +12,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="centered-row gap-2 cursor-pointer hover:-translate-y-1 transition2">
-                <Command className="w-6 h-6 text-green-400" />
+                <LineChart className="w-6 h-6 text-green-400" />
                 <h3 className="clash-display text-lg text-zinc-100 hover:text-green-300">
-                  ForexTrade
+                  JinahTrade
                 </h3>
               </div>
               <p className="text-sm text-zinc-400/90">
@@ -56,7 +56,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-white/10">
             <p className="text-sm text-zinc-400/80 text-center clash-display">
-              &copy; {new Date().getFullYear()} Footprint Arts. All rights
+              &copy; {new Date().getFullYear()} PT. Jinah Luwih. All rights
               reserved.
             </p>
           </div>

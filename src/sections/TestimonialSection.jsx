@@ -52,7 +52,7 @@ const TestimonialSection = () => {
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave} 
                                 className="w-[400px] cursor-pointer shrink-0 bg-black/40 backdrop-blur-xl border-white/5
-                            hover:border-white/10 transition-all duration-300 p-8 border-2 rounded-xl">
+                            hover:border-white/10 transition-all duration-500 p-8 border-2 rounded-xl">
                                 {/* Image & Name */}
                                 <div className="centered-row gap-4 mb-6">
                                     {/* img */}
@@ -88,7 +88,7 @@ const TestimonialSection = () => {
                             testimonials.map((testimonial, index)=>(
 
                                 <div key={index} className="w-[400px] cursor-pointer shrink-0 bg-black/40 backdrop-blur-xl border-white/5
-                                hover:border-white/10 transition-all duration-300 p-8 border-2 rounded-xl">
+                                hover:border-white/10 transition-all duration-500 p-8 border-2 rounded-xl">
                                     {/* Image & Name */}
                                     <div className="centered-row gap-4 mb-6">
                                         {/* img */}

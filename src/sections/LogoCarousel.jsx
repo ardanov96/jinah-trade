@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const LogoCarousel = () => {
     const logos = [
-        "/log1.png",
-        "/log2.png",
+        "/log1.jpeg",
+        "/log2.jpeg",
         "/log3.png",
         "/log4.png",
         "/log5.png",   

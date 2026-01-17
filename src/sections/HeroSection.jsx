@@ -1,4 +1,4 @@
-import { ArrowRight, Command } from "lucide-react";
+import { ArrowRight, LineChart } from "lucide-react";
 
 const HeroSection = () => {
   return  (
@@ -7,7 +7,7 @@ const HeroSection = () => {
 
         <div className="flex w-fit py-2 mb-4 px-4 cursor-pointer rounded-full glass">
             <span className="text-sm font-medium text-zinc-300">
-                    <Command className="w-4 h-4 inline-block mr-2"/>
+                    <LineChart className="w-4 h-4 inline-block mr-2"/>
                     Next-gen forex trading platform
             </span>
         </div>

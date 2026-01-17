@@ -37,46 +37,46 @@
 
   const testimonials = [
     {
-      name: "Michael Chen",
-      role: "Professional Trader",
+      name: "Vikram Kumar",
+      role: "Retail Trader",
       image: "/av1.png",
       content:
-        "The real-time market data and advanced trading features have significantly improved my trading performance. The platform's security measures give me peace of mind.",
+        "As a day trader, execution speed and low costs are my top priorities. On JinahTrade, I get spreads starting from 0.0 pips and almost zero slippage, even during high-impact news events. The user interface is incredibly intuitive, making it seamless to navigate between different currency pairs under pressure.",
     },
     {
-      name: "Sarah Johnson",
-      role: "Crypto Fund Manager",
-      image: null,
+      name: "Melissa Schumer",
+      role: "Market Analyst",
+      image: "/av6.png",
       content:
-        "ForexTrade's institutional-grade tools have transformed our trading strategy. The API integration and automated features have saved us countless hours.",
+        "The charting tools on this platform are top-tier. The integration of a real-time economic calendar and a comprehensive suite of technical indicators allows me to perform deep dives without ever leaving the app. Their 'Market Sentiment' feature provides a brilliant objective snapshot of current positioning.",
     },
     {
-      name: "David Wilson",
-      role: "Early Forex Investor",
+      name: "Joshua Clarke",
+      role: "Algo Developer",
       image: "/av2.png",
       content:
-        "The customer support is exceptional, and the platform's intuitive design made getting started with crypto trading seamless. A game-changer for both beginners and pros.",
+        "It’s rare to find a platform that supports API integration as smoothly as JinahTrade. The latency is exceptionally low, which is vital for my High-Frequency Trading (HFT) strategies. Furthermore, the backtesting environment is robust, providing high-quality historical data that I can actually trust.",
     },
     {
       name: "Emily Zhang",
-      role: "DeFi Developer",
+      role: "Risk Manager",
       image: "/av4.png",
       content:
-        "We've seen remarkable improvements in our trading efficiency since switching to ForexTrade. The smart order routing and liquidity aggregation are particularly impressive.",
+        "Security of funds and risk mitigation are non-negotiable for us. I highly value the advanced Stop-Loss features and the highly responsive Margin Call alerts. The platform’s regulatory compliance and transparent transaction reporting provide the peace of mind necessary for professional fund management.",
     },
     {
       name: "James Rodriguez",
       role: "Forex Security Expert",
       image: "/av3.png",
       content:
-        "The security features are robust and the regular updates keep us ahead of emerging threats. It's exactly what the Forex industry needed.",
+        "I was particularly impressed by their DDoS mitigation strategies and the fact that client funds are kept in segregated Tier-1 bank accounts. For any trader concerned about data breaches or 'man-in-the-middle' attacks, this platform’s infrastructure is exceptionally resilient.",
     },
     {
-      name: "Lisa Thompson",
-      role: "Portfolio Manager",
-      image: "/av1.png",
+      name: "Linda Kane",
+      role: "Fund Manager",
+      image: "/av5.png",
       content:
-        "The platform's ability to handle complex trading strategies while maintaining simplicity in its interface is remarkable. It's been invaluable for our portfolio management.",
+        "Managing multiple client accounts requires a stable and scalable environment. JinahTrade offers a sophisticated MAM/PAMM system that makes allocation effortless. The reporting tools are professional and detailed, which helps immensely when presenting performance results to my investors.",
     },
   ];
 

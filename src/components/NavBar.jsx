@@ -1,4 +1,4 @@
-import { Command } from "lucide-react";
+import { LineChart } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const NavBar = () => {  
@@ -26,7 +26,7 @@ const NavBar = () => {
             <nav className="centered-row justify-between h-full">
                 {/* Logo */}
                 <div className="centered-row gap-2 hover:-translate-y-1 duration-200 transition-all ease-out">
-                    <Command className="w-5 h-5 text-green-400"/>
+                    <LineChart className="w-5 h-5 text-green-400"/>
 
                     <span className="font-bold text-base clash-display"> 
                         JinahTrade

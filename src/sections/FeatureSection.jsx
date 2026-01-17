@@ -41,7 +41,7 @@ const FeatureSection = () => {
             </h2>
 
             <p className="text-lg text-zinc-300/80 text-left">
-                Powerful crypto trading tools designed for both beginners and professionals. 
+                Powerful Forex trading tools designed for both beginners and professionals. 
                 Trade smarter at every level.
             </p>
         </div>
