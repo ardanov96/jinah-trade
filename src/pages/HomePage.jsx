@@ -4,7 +4,7 @@ import HeroSection from "../sections/HeroSection"
 import LogoCarousel from "../sections/LogoCarousel"
 import PricingSection from "../sections/PricingSection"
 import TestimonialSection from "../sections/TestimonialSection"
-import CtaSection from "../sections/CtaSection"
+import CtaSection from "../sections/CtaSection";
 import Footer from "../components/Footer"
 
 const HomePage = () => {
