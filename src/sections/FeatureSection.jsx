@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "framer-motion"
+import * as Motion from "framer-motion"
 import { features } from "../assets/data"
 
 const FeatureSection = () => {
@@ -88,7 +89,7 @@ const FeatureSection = () => {
                 {/* Right: Tab Images */}
                 <div className="md:col-span-7 min-h-[320px] centered-row">
                         <AnimatePresence mode="wait">
-                            <motion.div 
+                            <Motion.div 
                                 key={features[activeIndex].title} 
                                 initial={{
 
@@ -111,7 +112,7 @@ const FeatureSection = () => {
                                         className="w-full h-full object-contain relative z-10"
                                     />
                                 </div>  
-                            </motion.div>
+                            </Motion.div>
                         </AnimatePresence>
                 </div>
             </div>
