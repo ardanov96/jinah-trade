@@ -1,4 +1,4 @@
-import * as Motion from "framer-motion"
+import { m as Motion } from "framer-motion"
 
 
 

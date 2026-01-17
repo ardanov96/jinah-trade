@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import { AnimatePresence } from "framer-motion"
-import * as Motion from "framer-motion"
+import { AnimatePresence, m as Motion } from "framer-motion"
 import { features } from "../assets/data"
 
 const FeatureSection = () => {
@@ -89,30 +88,25 @@ const FeatureSection = () => {
                 {/* Right: Tab Images */}
                 <div className="md:col-span-7 min-h-[320px] centered-row">
                         <AnimatePresence mode="wait">
-                            <Motion.div 
-                                key={features[activeIndex].title} 
-                                initial={{
+                            <Motion.div
+  key={features[activeIndex].title}
+  initial={{ opacity: 0, y: 60 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, x: -60 }}
+  transition={{ duration: 0.5, ease: "easeOut" }}
+  className="glass rounded-xl overflow-hidden w-full relative min-h-[320px]"
+>
+  {/* background gradient */}
+  <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-transparent" />
 
-                                    opacity:0,
-                                    y:60,
+  {/* image */}
+  <img
+    src={features[activeIndex].image}
+    alt="feature_image"
+    className="w-full h-full object-contain relative z-10"
+  />
+</Motion.div>
 
-                                }} 
-                                animate={{
-                                    opacity:1,
-                                    y:0
-                                }} 
-                                exit={{opacity:0, x:-60}} 
-                                transition={{duration: 0.5, ease: "easeOut"}} 
-                                className="glass rounded-xl overflow-hidden w-full relative"
-                            >
-                                <div className="inset-0 bg-gradient-to-br from-green-500 to-transparent">
-                                    <img 
-                                        src={features[activeIndex].image} 
-                                        alt="feature_image"
-                                        className="w-full h-full object-contain relative z-10"
-                                    />
-                                </div>  
-                            </Motion.div>
                         </AnimatePresence>
                 </div>
             </div>
