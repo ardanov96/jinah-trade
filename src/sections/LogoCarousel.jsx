@@ -1,4 +1,4 @@
-import { m as Motion } from "framer-motion"
+import { motion as Motionx } from "framer-motion"
 
 
 
@@ -17,7 +17,7 @@ const LogoCarousel = () => {
     <div className="w-full overflow-hidden cursor-pointer bg-[#050505]
     backdrop-blur-sm py-12 mt-20">
         
-        <Motion.div 
+        <Motionx.div 
             className="flex space-x-16" 
             style={{
                 width:"fit-content",
@@ -43,7 +43,7 @@ const LogoCarousel = () => {
             }}
         >
             {extendedLogos.map((item, index) => (
-                <Motion.img 
+                <Motionx.img 
                     key={index} 
                     src={item} 
                     alt="logo"
@@ -60,7 +60,7 @@ const LogoCarousel = () => {
                     }} 
                 />
             ))} 
-        </Motion.div>
+        </Motionx.div>
     </div>
   );
 };

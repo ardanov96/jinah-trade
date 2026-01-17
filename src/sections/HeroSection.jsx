@@ -17,11 +17,11 @@ const HeroSection = () => {
             {/* Heading */}
             <h1 className="text-5xl md:text-7xl mb-4 tracking-tight text-left">
                 <span className="clash-display grad1">
-                    Trade Forex with
+                    Turn Market Moves 
                 </span>
                 <br/>
                     <span className="text-zinc-50 font-medium clash-display">
-                        Confidence & Security   
+                        into Opportunities.   
                     </span>
             </h1>
             {/* Para */}

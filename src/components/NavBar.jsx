@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 
 const NavBar = () => {  
 
-  const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileOpen, setIsMobileOpen] = useState(false);
   
     // Scroll Effect On Navbar
   useEffect(()=>{   
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50)
+            setIsScrolled(window.scrollY > 50);
+            setIsMobileOpen(false);
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -57,10 +59,37 @@ const NavBar = () => {
                 </div>
 
                     {/* Mobile Navigation */}
-                    <div className="md:hidden glass p-1 rounded-md">
+                    <div 
+                        className="md:hidden glass p-1 rounded-md cursor-pointer"
+                        onClick={() => setIsMobileOpen(!isMobileOpen)}    
+                    >
                             <img src="/menu.svg" alt="menu-icon" className="w-8" />
                     </div>
             </nav>
+
+            {isMobileOpen && (
+                <div className="md:hidden absolute top-16 left-1/2 -translate-x-1/2
+                w-[90%] bg-[#1b1b1b]/90 backdrop-blur-xl border border-white/10
+                rounded-2xl p-6 flex flex-col gap-4 z-40">
+
+                    {["Features", "Prices", "Testimonials"].map((item, index) => (
+                    <a
+                        key={index}
+                        href="nav_link"
+                        className="text-sm text-zinc-300 hover:text-green-400 transition"
+                        onClick={() => setIsMobileOpen(false)}
+                    >
+                        {item}
+                    </a>
+                    ))}
+
+                    <button className="clash-display bg-gradient-to-r from-green-400 to-green-600
+                    py-2 rounded-full text-center hover:shadow-lg hover:shadow-green-900 transition">
+                    Start Trading
+                    </button>
+                </div>
+            )}
+
         </div>
 
   </header>;
