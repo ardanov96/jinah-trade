@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react"
 
-const ctasection = () => {
+const CtaSection = () => {
   return (
     <section className="container mx-auto px-4 py-20 relative bg-black">
         {/* BG Image */}
@@ -32,4 +32,4 @@ const ctasection = () => {
   )
 }
 
-export default ctasection
+export default CtaSection
